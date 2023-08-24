@@ -4,7 +4,6 @@ import com.sdu.base.common.annotation.TransactionalExecuteConfigurer;
 import com.sdu.base.common.aspect.TransactionalExecuteAspect;
 import com.sdu.base.common.dao.SecureInvokeRecordDAO;
 import com.sdu.base.common.repository.TransactionalExecuteRecordMapper;
-import com.sdu.base.common.service.transaction.MQProducer;
 import com.sdu.base.common.service.transaction.TransactionalExecuteService;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.ObjectProvider;
@@ -54,10 +53,5 @@ public class TransactionAutoConfiguration {
     @Bean
     public TransactionalExecuteService getSecureInvokeService(SecureInvokeRecordDAO secureInvokeRecordDAO) {
         return new TransactionalExecuteService(secureInvokeRecordDAO, executor);
-    }
-
-    @Bean
-    public MQProducer getMQProducer() {
-        return new MQProducer();
     }
 }

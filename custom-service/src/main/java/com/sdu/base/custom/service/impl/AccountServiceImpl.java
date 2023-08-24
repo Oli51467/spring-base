@@ -6,6 +6,7 @@ import com.sdu.base.common.response.ResponseResult;
 import com.sdu.base.common.response.exception.ExceptionEnum;
 import com.sdu.base.common.utils.JwtUtil;
 import com.sdu.base.common.utils.RedisUtil;
+import com.sdu.base.custom.entity.dto.RegisterReq;
 import com.sdu.base.custom.entity.po.User;
 import com.sdu.base.custom.entity.vo.BaseUserResp;
 import com.sdu.base.custom.repository.UserMapper;

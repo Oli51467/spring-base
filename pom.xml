@@ -19,6 +19,7 @@
         <module>custom-service</module>
         <module>transaction-service</module>
         <module>common</module>
+        <module>gateway</module>
     </modules>
 
     <properties>

@@ -10,12 +10,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @ComponentScan("com.sdu.base")
-@MapperScan(value = "com.sdu.rabbix", annotationClass = Mapper.class)
+@MapperScan(value = "com.sdu.base", annotationClass = Mapper.class)
 @EnableScheduling
 @EnableTransactionManagement
-public class OrderServiceApplication {
+public class ServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderServiceApplication.class, args);
+        SpringApplication.run(ServiceApplication.class, args);
     }
 }

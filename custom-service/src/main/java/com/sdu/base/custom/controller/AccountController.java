@@ -1,6 +1,7 @@
 package com.sdu.base.custom.controller;
 
 import com.sdu.base.common.response.ResponseResult;
+import com.sdu.base.custom.entity.dto.RegisterReq;
 import com.sdu.base.custom.service.AccountService;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.RequestBody;
